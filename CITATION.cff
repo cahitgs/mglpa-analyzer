@@ -7,7 +7,7 @@ date-released: "2026-09-11"
 license: MIT
 repository-code: "https://github.com/cahitgs/mglpa-analyzer"
 url: "https://cahitgs.github.io/mglpa-analyzer/"
-# doi: "10.5281/zenodo.XXXXXXX"   # <- add after the first Zenodo archive of the v1.0.0 release
+doi: "10.5281/zenodo.22698718"
 keywords:
   - latent profile analysis
   - multiple-group analysis
