@@ -1,6 +1,6 @@
 {
   "title": "MG-LPA Analyzer: An online tool to support the implementation of multi-group tests of similarity for latent profile analyses in Mplus",
-  "description": "<p>The MG-LPA Analyzer is a browser-based, open-source application that generates, organizes, and reports the six-step profile-similarity sequence of Morin, Meyer, Creusier, and Bi&eacute;try (2016) for multi-group latent profile analysis (MG-LPA) in Mplus. It writes the Mplus input files for class enumeration and for the configural, structural, dispersion, distributional, predictive, and explanatory similarity tests, parses the Mplus output files, applies the documented decision rules, and produces APA-style tables and profile figures. All estimation is performed by a licensed copy of Mplus on the user's own computer; the application performs no estimation and transmits no data. This release runs online (GitHub Pages) or fully offline from the unzipped archive.</p>",
+  "description": "<p>The MG-LPA Analyzer is a browser-based, open-source application that generates, organizes, and reports the six-step profile-similarity sequence of Morin, Meyer, Creusier, and Bi&eacute;try (2016) for multi-group latent profile analysis (MG-LPA) in Mplus. It writes the Mplus input files for class enumeration and for the configural, structural, dispersion, distributional, predictive, and explanatory similarity tests, parses the Mplus output files, applies the documented decision rules, and produces APA-style tables and profile figures. All estimation is performed by a licensed copy of Mplus on the user's own computer; the application performs no estimation and transmits no data. This release runs online (GitHub Pages) or fully offline from the unzipped archive, and includes the simulated example dataset and the project file that reproduces the analyses of the accompanying article.</p>",
   "upload_type": "software",
   "license": "MIT",
   "version": "1.0.0",
@@ -30,12 +30,6 @@
     }
   ],
   "related_identifiers": [
-    {
-      "identifier": "10.17605/OSF.IO/5DPZC",
-      "relation": "isSupplementedBy",
-      "resource_type": "dataset",
-      "scheme": "doi"
-    },
     {
       "identifier": "10.1177/1094428115621148",
       "relation": "isDerivedFrom",

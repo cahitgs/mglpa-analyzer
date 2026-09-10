@@ -4,7 +4,8 @@
 
 - Online version: **https://cahitgs.github.io/mglpa-analyzer/**
 - Offline version: download the latest release ZIP from the **Releases** page, unzip it, and open `index.html` in your browser. No installation, no server, no internet connection needed.
-- Archived release (v1.0.0) with DOI: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22698718.svg)](https://doi.org/10.5281/zenodo.22698718) · all versions: https://doi.org/10.5281/zenodo.22698717 · Supplementary materials on OSF: https://doi.org/10.17605/OSF.IO/5DPZC
+- Example materials: the simulated dataset and the project file that reproduces every result of the article are in `example/` (see below).
+- Archived releases with DOI (all versions): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22698717.svg)](https://doi.org/10.5281/zenodo.22698717)
 - Accompanying article: Marangoz, Çokluk-Bökeoğlu, & Morin (2026), *Behavior Research Methods* *(in revision)*
 
 > **What you need.** A licensed copy of **Mplus** (version 8 or later) installed on your own computer. The MG-LPA Analyzer does **not** estimate any model: it writes Mplus input files, reads the Mplus output files you upload, and turns them into tables and figures. All estimation runs locally in Mplus on your machine, so run times depend on your own CPU and memory.
@@ -23,7 +24,7 @@
 | **3 — Predictive similarity** | Builds the free and equal multinomial-logistic models on fixed start values, plus all pairwise re-orderings; tabulates odds ratios and CIs | Run the input files |
 | **4 — Explanatory similarity** | Builds the free and equal outcome models (with free or equal outcome variances) including delta-method contrasts; tabulates means, CIs, and pairwise tests | Run the input files |
 
-Every step offers **Save Project / Load Project** (a JSON file with all settings and parsed results) and APA-style tables that can be downloaded as Word documents. The `example/` folder contains the simulated working-memory dataset used in the article (N = 1,000; two age groups) and a saved project file that reproduces all results shown in the paper: open the app, click **Load Project**, and choose `example/mglpa_project.json`.
+Every step offers **Save Project / Load Project** (a JSON file with all settings and parsed results) and APA-style tables that can be downloaded as Word documents. The `example/` folder contains the simulated working-memory dataset used in the article (N = 1,000; two age groups), a saved project file that reproduces all results shown in the paper (open the app, click **Load Project**, and choose `example/mglpa_project.json`). The project file restores the parsed results of every model, and the application regenerates every Mplus input file from the saved settings.
 
 ## About the batch script (`RUN_ALL.bat`)
 
@@ -56,7 +57,7 @@ It performs no downloads, changes no settings, and needs no administrator rights
 index.html                 the application (single page)
 lib/                       vendored JavaScript libraries (JSZip, Chart.js, SheetJS)
 fonts/                     vendored web fonts (offline use)
-example/                   simulated dataset (.csv/.dat) and a saved project file
+example/                   simulated dataset (.csv/.dat) and the saved project file
 CITATION.cff               citation metadata
 LICENSE                    MIT (plus third-party notices)
 ```
