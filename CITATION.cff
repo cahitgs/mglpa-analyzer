@@ -3,7 +3,7 @@ message: "If you use the MG-LPA Analyzer, please cite both the software and the 
 type: software
 title: "MG-LPA Analyzer: An online tool to support the implementation of multi-group tests of similarity for latent profile analyses in Mplus"
 version: 1.0.0
-date-released: "2026-XX-XX"
+date-released: "2026-09-11"
 license: MIT
 repository-code: "https://github.com/cahitgs/mglpa-analyzer"
 url: "https://cahitgs.github.io/mglpa-analyzer/"
