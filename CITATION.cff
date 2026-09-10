@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use the MG-LPA Analyzer, please cite both the software and the accompanying article."
+type: software
+title: "MG-LPA Analyzer: An online tool to support the implementation of multi-group tests of similarity for latent profile analyses in Mplus"
+version: 1.0.0
+date-released: "2026-XX-XX"
+license: MIT
+repository-code: "https://github.com/cahitgs/mglpa-analyzer"
+url: "https://cahitgs.github.io/mglpa-analyzer/"
+# doi: "10.5281/zenodo.XXXXXXX"   # <- add after the first Zenodo archive of the v1.0.0 release
+keywords:
+  - latent profile analysis
+  - multiple-group analysis
+  - profile similarity
+  - mixture modeling
+  - Mplus
+  - person-centered
+authors:
+  - family-names: Marangoz
+    given-names: Mehmet Cahit
+    orcid: "https://orcid.org/0000-0003-0850-2251"
+    affiliation: "Republic of Türkiye Ministry of National Education, Osman Demir Secondary School, Siirt, Türkiye"
+  - family-names: Çokluk-Bökeoğlu
+    given-names: Ömay
+    orcid: "https://orcid.org/0000-0002-3879-9204"
+    affiliation: "Department of Educational Measurement and Evaluation, Faculty of Educational Sciences, Ankara University, Ankara, Türkiye"
+  - family-names: Morin
+    given-names: Alexandre J. S.
+    orcid: "https://orcid.org/0000-0001-6898-4788"
+    affiliation: "Substantive-Methodological Synergy Research Laboratory, Concordia University, Montreal, Canada; Optentia Research Unit, North-West University, Vanderbijlpark, South Africa"
+preferred-citation:
+  type: article
+  title: "An online tool to support the implementation of multi-group tests of similarity for latent profile analyses in the Mplus statistical package"
+  journal: "Behavior Research Methods"
+  year: 2026
+  status: in-press   # update when published; add doi
+  authors:
+    - family-names: Marangoz
+      given-names: Mehmet Cahit
+    - family-names: Çokluk-Bökeoğlu
+      given-names: Ömay
+    - family-names: Morin
+      given-names: Alexandre J. S.
+references:
+  - type: article
+    title: "Multiple-group analysis of similarity in latent profile solutions"
+    authors:
+      - family-names: Morin
+        given-names: Alexandre J. S.
+      - family-names: Meyer
+        given-names: John P.
+      - family-names: Creusier
+        given-names: Jonathan
+      - family-names: Biétry
+        given-names: Franck
+    journal: "Organizational Research Methods"
+    volume: 19
+    issue: 2
+    start: 231
+    end: 254
+    year: 2016
+    doi: "10.1177/1094428115621148"

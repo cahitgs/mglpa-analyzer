@@ -1,0 +1,77 @@
+# MG-LPA Analyzer
+
+**A browser-based tool that generates, organizes, and reports multi-group tests of profile similarity for latent profile analysis (LPA) in Mplus**, following the six-step sequence of Morin, Meyer, Creusier, and Biétry (2016).
+
+- Online version: **https://cahitgs.github.io/mglpa-analyzer/** *(canonical URL; update after the repository is created)*
+- Offline version: download the latest release ZIP from the **Releases** page, unzip it, and open `index.html` in your browser. No installation, no server, no internet connection needed.
+- Archived snapshot with DOI: Zenodo *(add badge after first release)* · Supplementary materials on OSF: https://doi.org/10.17605/OSF.IO/5DPZC
+- Accompanying article: Marangoz, Çokluk-Bökeoğlu, & Morin (2026), *Behavior Research Methods* *(in revision)*
+
+> **What you need.** A licensed copy of **Mplus** (version 8 or later) installed on your own computer. The MG-LPA Analyzer does **not** estimate any model: it writes Mplus input files, reads the Mplus output files you upload, and turns them into tables and figures. All estimation runs locally in Mplus on your machine, so run times depend on your own CPU and memory.
+
+> **What it is for.** Latent profile analysis with continuous indicators, compared across two or more known groups (e.g., gender, culture, age group). It is not a general clustering tool and it does not (yet) support latent class analysis with categorical indicators.
+
+> **What it is not.** A substitute for mixture-modeling expertise. The tool removes the coding burden and standardizes reporting; deciding how many profiles to retain, judging the theoretical meaning of a solution, and interpreting borderline fit comparisons remain the researcher's responsibility.
+
+## Workflow
+
+| Step | What the app does | What you do in Mplus |
+|---|---|---|
+| **0 — Class enumeration** | Generates one input file per group and per number of profiles (e.g., 1–8), packages them in a ZIP, then parses the outputs into fit tables and an elbow plot | Run the input files |
+| **1 — Similarity tests** | Generates the configural, structural, dispersion, and distributional models; compares CAIC/BIC/ABIC across nested models; exports start values | Run the four input files |
+| **2 — Profile plot** | Draws standardized profile plots (bar/line/radar, nine palettes incl. colorblind-safe); exports PNG and Excel | — |
+| **3 — Predictive similarity** | Builds the free and equal multinomial-logistic models on fixed start values, plus all pairwise re-orderings; tabulates odds ratios and CIs | Run the input files |
+| **4 — Explanatory similarity** | Builds the free and equal outcome models (with free or equal outcome variances) including delta-method contrasts; tabulates means, CIs, and pairwise tests | Run the input files |
+
+Every step offers **Save Project / Load Project** (a JSON file with all settings and parsed results) and APA-style tables that can be downloaded as Word documents. The `example/` folder contains the simulated working-memory dataset used in the article (N = 1,000; two age groups) and a saved project file that reproduces all results shown in the paper: open the app, click **Load Project**, and choose `example/mglpa_project.json`.
+
+## About the batch script (`RUN_ALL.bat`)
+
+Each ZIP produced by the app contains the Mplus input files, a `README.txt`, and a small Windows batch file named `RUN_ALL.bat`. The batch file is **optional** and **fully transparent**: it is a plain-text file that contains nothing but one `Mplus "file.inp"` line per input file, for example:
+
+```
+@echo off
+echo Mplus LPA Batch Runner
+Mplus "LPA_Group1_k1_FIXED.inp"
+Mplus "LPA_Group1_k2_FIXED.inp"
+...
+pause
+```
+
+It performs no downloads, changes no settings, and needs no administrator rights. Open it in any text editor before running it if you wish. If your institution blocks batch files (Windows SmartScreen, AppLocker, or group policy), you can instead:
+
+1. open each `.inp` file in the Mplus editor and click **Run**, or
+2. run them from R with `MplusAutomation::runModels("path/to/folder")` (Hallquist & Wiley, 2018), or
+3. on macOS/Linux, run `mplus file.inp` in a terminal for each file.
+
+## Platform and browser notes
+
+- The app is a single HTML/JavaScript page. It has been used with current versions of Chrome, Edge, and Firefox on Windows; the offline bundle was verified to load and run all five steps with the network disabled. Safari on macOS should work but has not been tested by the authors *(update this line as testing proceeds)*.
+- Mplus itself runs on Windows, macOS, and Linux; the generated input files are identical on all platforms. Only `RUN_ALL.bat` is Windows-specific.
+- Data privacy: uploaded data and output files are processed entirely inside your browser and are never sent anywhere. The app contains no analytics or tracking code.
+
+## Repository contents
+
+```
+index.html                 the application (single page)
+lib/                       vendored JavaScript libraries (JSZip, Chart.js, SheetJS)
+fonts/                     vendored web fonts (offline use)
+example/                   simulated dataset (.csv/.dat) and a saved project file
+CITATION.cff               citation metadata
+LICENSE                    MIT (plus third-party notices)
+```
+
+## Citing
+
+Please cite the article and the software (see `CITATION.cff`; GitHub shows a "Cite this repository" button):
+
+- Marangoz, M. C., Çokluk-Bökeoğlu, Ö., & Morin, A. J. S. (2026). An online tool to support the implementation of multi-group tests of similarity for latent profile analyses in the Mplus statistical package. *Behavior Research Methods*. *(in revision)*
+- Morin, A. J. S., Meyer, J. P., Creusier, J., & Biétry, F. (2016). Multiple-group analysis of similarity in latent profile solutions. *Organizational Research Methods, 19*(2), 231–254. https://doi.org/10.1177/1094428115621148
+
+## Feedback and contributions
+
+Please use the GitHub **Issues** page for bug reports, questions, and feature requests. Contact: Mehmet Cahit Marangoz, cahitgs@gmail.com.
+
+## License
+
+MIT License. See `LICENSE` for the full text and for the licenses of the bundled third-party libraries and fonts.
