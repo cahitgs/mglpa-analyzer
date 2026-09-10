@@ -61,17 +61,6 @@ CITATION.cff               citation metadata
 LICENSE                    MIT (plus third-party notices)
 ```
 
-## Citing
-
-Please cite the article and the software (see `CITATION.cff`; GitHub shows a "Cite this repository" button):
-
-- Marangoz, M. C., Çokluk-Bökeoğlu, Ö., & Morin, A. J. S. (2026). An online tool to support the implementation of multi-group tests of similarity for latent profile analyses in the Mplus statistical package. *Behavior Research Methods*. *(in revision)*
-- Morin, A. J. S., Meyer, J. P., Creusier, J., & Biétry, F. (2016). Multiple-group analysis of similarity in latent profile solutions. *Organizational Research Methods, 19*(2), 231–254. https://doi.org/10.1177/1094428115621148
-
-## Feedback and contributions
-
-Please use the GitHub **Issues** page for bug reports, questions, and feature requests. Contact: Mehmet Cahit Marangoz, cahitgs@gmail.com.
-
 ## License
 
 MIT License. See `LICENSE` for the full text and for the licenses of the bundled third-party libraries and fonts.
