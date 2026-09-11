@@ -47,7 +47,7 @@ It performs no downloads, changes no settings, and needs no administrator rights
 
 ## Platform and browser notes
 
-- The app is a single HTML/JavaScript page. The offline bundle was verified to load and run all five steps of the example project on Windows 11 (Chrome 146, Edge 152, and Firefox 152, with the network disabled) and on macOS 26.5 (Safari 26.5.2 and Chrome 152). Linux and Windows 10 have not been tested by the authors.
+- The app is a single HTML/JavaScript page. The offline bundle was verified to load and run all five steps of the example project on Windows 11 and Windows 10 (Chrome 146, Edge 152, and Firefox 152, with the network disabled) and on macOS 26.5 (Safari 26.5.2 and Chrome 152); on Windows 10 the online version was verified in the same three browsers. Linux has not been tested by the authors.
 - Mplus itself runs on Windows, macOS, and Linux; the generated input files are identical on all platforms. Only `RUN_ALL.bat` is Windows-specific.
 - Data privacy: uploaded data and output files are processed entirely inside your browser and are never sent anywhere. The app contains no analytics or tracking code.
 
