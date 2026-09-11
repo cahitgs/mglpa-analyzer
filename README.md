@@ -6,7 +6,6 @@
 - Offline version: download the latest release ZIP from the **Releases** page, unzip it, and open `index.html` in your browser. No installation, no server, no internet connection needed.
 - Example materials: the simulated dataset and the project file that reproduces every result of the article are in `example/` (see below).
 - Archived releases with DOI (all versions): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22698717.svg)](https://doi.org/10.5281/zenodo.22698717)
-- Accompanying article: Marangoz, Çokluk-Bökeoğlu, & Morin (2026), *Behavior Research Methods* *(in revision)*
 
 > **What you need.** A licensed copy of **Mplus** (version 8 or later) installed on your own computer. The MG-LPA Analyzer does **not** estimate any model: it writes Mplus input files, reads the Mplus output files you upload, and turns them into tables and figures. All estimation runs locally in Mplus on your machine, so run times depend on your own CPU and memory.
 
