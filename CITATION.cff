@@ -28,19 +28,6 @@ authors:
     given-names: Alexandre J. S.
     orcid: "https://orcid.org/0000-0001-6898-4788"
     affiliation: "Substantive-Methodological Synergy Research Laboratory, Concordia University, Montreal, Canada; Optentia Research Unit, North-West University, Vanderbijlpark, South Africa"
-preferred-citation:
-  type: article
-  title: "An online tool to support the implementation of multi-group tests of similarity for latent profile analyses in the Mplus statistical package"
-  journal: "Behavior Research Methods"
-  year: 2026
-  status: in-press   # update when published; add doi
-  authors:
-    - family-names: Marangoz
-      given-names: Mehmet Cahit
-    - family-names: Çokluk-Bökeoğlu
-      given-names: Ömay
-    - family-names: Morin
-      given-names: Alexandre J. S.
 references:
   - type: article
     title: "Multiple-group analysis of similarity in latent profile solutions"
