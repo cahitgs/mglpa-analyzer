@@ -25,6 +25,19 @@
 
 Every step offers **Save Project / Load Project** (a JSON file with all settings and parsed results) and APA-style tables that can be downloaded as Word documents. The `example/` folder contains the simulated working-memory dataset used in the article (N = 1,000; two age groups), a saved project file that reproduces all results shown in the paper (open the app, click **Load Project**, and choose `example/mglpa_project.json`). The project file restores the parsed results of every model, and the application regenerates every Mplus input file from the saved settings.
 
+## Example dataset
+
+`example/mglpa_wm_dataset_n1000.csv` (and the Mplus-ready `.dat` version without a header row) is a simulated working-memory dataset generated in R: N = 1,000 (500 younger adults, 500 older adults).
+
+| Role | Variables |
+|---|---|
+| Profile indicators (z-scores) | `verbal_wm`, `visual_wm`, `updating`, `inhibition`, `proc_speed` |
+| Predictors | `education` (years), `cog_reserve` (z-score) |
+| Distal outcomes | `task_perf` (percent correct), `everyday_func` (0–100 scale) |
+| Grouping variable | `group` (1 = younger adults, 2 = older adults) |
+
+`example/mglpa_project.json` restores every parsed result of the article; the application regenerates all Mplus input files from it.
+
 ## About the batch script (`RUN_ALL.bat`)
 
 Each ZIP produced by the app contains the Mplus input files, a `README.txt`, and a small Windows batch file named `RUN_ALL.bat`. The batch file is **optional** and **fully transparent**: it is a plain-text file that contains nothing but one `Mplus "file.inp"` line per input file, for example:
